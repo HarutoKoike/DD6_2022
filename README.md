@@ -40,7 +40,7 @@ export DATA_PATH=$HOME/data
 </br>
 
 ## Cluster衛星のデータベースへのアクセス権限
-Cluster衛星のデータベースは*European Space Agency(ESA)*によって管理されており、利用にはユーザ登録が必要。
+Cluster衛星のデータベースはEuropean Space Agency(ESA)によって管理されており、利用にはユーザ登録が必要。
 [https://www.cosmos.esa.int/web/csa/register-now](https://www.cosmos.esa.int/web/csa/register-now)から登録する。 </br>
 !メモ　 パスワードとユーザ名の入力は、プログラムに直打ち？　検討
 </br>
