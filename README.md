@@ -1,9 +1,4 @@
-# 解析の準備
-## Cluster衛星のデータベースへのアクセス権限
-! 時間がかかるため先にやる
-
-
-
+# 解析準備
 
 ## Cluster衛星データ解析用プログラムのダウンロード
 ！　gitコマンドが入っているか確認 </br>
@@ -36,5 +31,15 @@ unzip spedas_5_0.zip
 export DATA_PATH=$HOME/data
 ```
 
+## Cluster衛星のデータベースへのアクセス権限
+Cluster衛星のデータベースはEuropian Space Agency(ESA)によって管理されており、利用にはユーザ登録が必要。
+[https://www.cosmos.esa.int/web/csa/register-now](https://www.cosmos.esa.int/web/csa/register-now)から登録する。 </br>
+! パスワードとユーザ名の入力は、プログラムに直打ち？　検討
 
 
+
+
+
+# その他リンク
+* [http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf](http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf) SPEDAS講習会の資料 
+* [http://themis.ssl.berkeley.edu/socware/spedas_5_0/idl/_spd_doc.html](http://themis.ssl.berkeley.edu/socware/spedas_5_0/idl/_spd_doc.html)  SPEDASの全プロシージャのドキュメント
