@@ -1,5 +1,7 @@
 # 解析準備(10分程度)
 
+</br>
+
 ## Cluster衛星データ解析用プログラムのダウンロード
 ！　メモ　gitコマンドが入っているか確認 </br>
 以下のコマンドを実行し、プログラムをダウンロードする。
@@ -8,6 +10,8 @@ cd ~/.idl
 git clone https://github.com/HarutoKoike/DD6_2022
 ```
 ※　~はホームディレクトリの意味。
+</br>
+</br>
 
 
 ## SPEDASのインストール
@@ -21,6 +25,8 @@ SPEDAS(https://spedas.org/blog/ )は、時系列データ解析・可視化の�
 wget http://spedas.org/downloads/spedas_5_0.zip
 unzip spedas_5_0.zip
 ``` 
+</br>
+</br>
 
 
 ## データの保存先
@@ -30,13 +36,16 @@ unzip spedas_5_0.zip
 ```bash 
 export DATA_PATH=$HOME/data
 ```
+</br>
+</br>
 
 ## Cluster衛星のデータベースへのアクセス権限
-Cluster衛星のデータベースはEuropian Space Agency(ESA)によって管理されており、利用にはユーザ登録が必要。
+Cluster衛星のデータベースはEuropean Space Agency(ESA)によって管理されており、利用にはユーザ登録が必要。
 [https://www.cosmos.esa.int/web/csa/register-now](https://www.cosmos.esa.int/web/csa/register-now)から登録する。 </br>
 !メモ　 パスワードとユーザ名の入力は、プログラムに直打ち？　検討
-
-
+</br>
+</br>
+</br>
 
 ## 動作確認
 以上の工程が問題なく完了できたら、プログラムが正常に動くかどうかを確認する。</br>
