@@ -20,3 +20,11 @@ Pythonで言うNumpyやmatplotlibのような感じ。 </br>
 wget http://spedas.org/downloads/spedas_5_0.zip
 unzip spedas_5_0.zip
 ``` 
+
+
+## 環境変数の設定
+ダウンロードしてきたデータを保存しておくディレクトリのパスを`DATA_PATH`という環境変数で指定する。
+以下の内容をホームディレクトリにある`.barhrc`に書き込む。
+```bash 
+export DATA_PATH=`$HOME/data `
+```
