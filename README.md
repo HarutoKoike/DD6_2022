@@ -60,5 +60,6 @@ Cluster衛星のデータベースはEuropean Space Agency(ESA)によって管�
 <br />
 
 # 参照リンク
-* SPEDAS講習会の資料  [http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf](http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf) 
+* SPEDAS講習会の資料  [http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf](http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf)
+* SPEDASの日本コミュニティのページ [https://github.com/spedas-j/member_contrib/wiki/spedas_useful_command](https://github.com/spedas-j/member_contrib/wiki/spedas_useful_command)
 * SPEDASの全プロシージャのドキュメント [http://themis.ssl.berkeley.edu/socware/spedas_5_0/idl/_spd_doc.html](http://themis.ssl.berkeley.edu/socware/spedas_5_0/idl/_spd_doc.html)  
