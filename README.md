@@ -3,13 +3,18 @@
 </br>
 
 ## Cluster衛星データ解析用プログラムのダウンロード
-！　メモ　gitコマンドが入っているか確認 </br>
 以下のコマンドを実行し、プログラムをダウンロードする。
 ```
 cd ~/.idl
 git clone https://github.com/HarutoKoike/DD6_2022
 ```
-※　~はホームディレクトリの意味。
+~はホームディレクトリの意味。<br>
+諸々のセットアップも行うため、DD6_2022のディレクトリの中にある`dd6_setup.sh`を実行する。
+```
+cd DD6_2022
+./dd6_setup.sh
+```
+
 </br>
 </br>
 
@@ -25,24 +30,20 @@ SPEDAS(https://spedas.org/blog/ )は、時系列データ解析・可視化の�
 wget http://spedas.org/downloads/spedas_5_0.zip
 unzip spedas_5_0.zip
 ``` 
-</br>
-</br>
 
 
-## データの保存先
-今回はホームディレクトリに`data`というディレクトリを作り、そこにダウンロードしてきたファイルを保存する。
-保存先のディレクトリのパスを`DATA_PATH`という環境変数で指定する。
-以下の内容を`~/.barhrc`に書き込み、`source`コマンドで変更を反映させる。
-```bash 
-export DATA_PATH=$HOME/data
-```
+
 </br>
 </br>
 
 ## Cluster衛星のデータベースへのアクセス権限
 Cluster衛星のデータベースはEuropean Space Agency(ESA)によって管理されており、利用にはユーザ登録が必要。
 [https://www.cosmos.esa.int/web/csa/register-now](https://www.cosmos.esa.int/web/csa/register-now)から登録する。 </br>
-!メモ　 パスワードとユーザ名の入力は、プログラムに直打ち？　検討
+メールで送られてくるユーザ名と自分で設定したパスワードを控えておく。
+`DD6_2022`以下にある`csa_info.csv`というファイルにユーザ名とパスワードをcsv形式で書き込む。
+```
+username, password
+```
 </br>
 </br>
 </br>
