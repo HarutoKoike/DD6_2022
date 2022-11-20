@@ -120,7 +120,7 @@ IF error_status NE 0 THEN BEGIN
     OBJ_DESTROY, ourl
     RETURN
 ENDIF
-; 
+ 
 
 
 ;
@@ -132,6 +132,9 @@ user_agent = 'IDL' + !VERSION.RELEASE
 ;
 ourl = OBJ_NEW('IDLnetUrl')
 ourl->SetProperty, /VERBOSE
+ourl->SetProperty, SSL_VERSION=0
+IF FLOAT(!VERSION.RELEASE) LE 8.4 THEN $
+    ourl->SetProperty, SSL_VERIFY_PEER=0
 ourl->SetProperty, URL_SCHEME = 'https'
 ourl->SetProperty, URL_HOST  = url_host
 ourl->SetProperty, URL_PATH  = url_path
@@ -153,7 +156,12 @@ OBJ_DESTROY, ourl
 ;
 ;*---------- uncompress gzip file  ----------*
 ;
-FILE_GUNZIP, filename, /DELETE
+IF FLOAT(!VERSION.RELEASE) LT 8.3 THEN BEGIN 
+    SPAWN, 'gunzip ' + filename
+    ;FILE_DELETE, filename
+ENDIF ELSE BEGIN
+    FILE_GUNZIP, filename, /DELETE
+ENDELSE
 ;
 ;
 ;*---------- rename .tar.gz file  ----------*

@@ -13,6 +13,15 @@ COMPILE_OPT IDL2
 ;
 PRINT, '% CLUSTER object has been created'
 ;
+csa = FILE_WHICH('csa_info.csv') 
+IF STRLEN(csa) EQ 0 THEN $
+    MESSAGE, 'No file for CSA user information'
+;
+csa      = READ_CSV(csa)
+username = csa.field1
+password = csa.field2
+self->setprop, password=password, username=username
+;
 RETURN, 1
 END
 
@@ -20,7 +29,7 @@ END
 
 ;-------------------------------------------------+
 ; 
-;-------------------------------------------------+
+;-----------------------------------------------+
 PRO cluster::GetProp, st=st, et=et, sc=sc, username=username, $
                       password=password
 COMPILE_OPT IDL2
@@ -41,6 +50,7 @@ END
 PRO cluster::SetProp, st=st, et=et, sc=sc, username=username,$
                       password=password, _EXTRA=e
 COMPILE_OPT IDL2
+;
 IF KEYWORD_SET(st) THEN self.st = st
 IF KEYWORD_SET(et) THEN self.et = et
 IF KEYWORD_SET(sc) THEN self.sc = STRING(sc, FORMAT='(I1)')
@@ -87,13 +97,19 @@ END
 ;-------------------------------------------------+
 PRO cluster__define
 COMPILE_OPT IDL2
+;
+IF FLOAT(!VERSION.RELEASE) LT 8.3 THEN BEGIN
+    @cluster::const.pro
+    DEFSYSV, '!CONST', const, 1
+ENDIF 
+;
 void = {                                 $
         cluster,                         $
         st       : '',                   $
         et       : '',                   $
         sc       : '',                   $
-        username : 'hkoike'             ,$
-        password : '@_2CLDBBmjpbrss'    ,$
+        username : ''                   ,$
+        password : ''                   ,$
         INHERITS IDL_OBJECT              $
         }
 END

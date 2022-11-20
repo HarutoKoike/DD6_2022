@@ -11,24 +11,24 @@ PRO dmsp::download, ssj=ssj, ssm=ssm, success, local_file
 COMPILE_OPT IDL2
 ;
 success = 0
-CATCH, error_status
-IF error_status NE 0 THEN BEGIN
-    CATCH, /CANCEL
-	PRINT, !ERROR_STATE.MSG
-	;
-    ourl->GetProperty, RESPONSE_CODE=rc, RESPONSE_HEADER=rh, $
-                       RESPONSE_FILENAME=rf
-    PRINT, '% Response Code = ' + rc
-    PRINT, '% Response Header = ' + rh
-    PRINT, '% Response Filename = ' + rf
-    PRINT, ' '
-    PRINT, '% Request stoped'
-	;
-    OBJ_DESTROY, ourl
-    success=0
-    fn     = ''
-    RETURN
-ENDIF
+;CATCH, error_status
+;IF error_status NE 0 THEN BEGIN
+;    CATCH, /CANCEL
+;	PRINT, !ERROR_STATE.MSG
+;	;
+;    ourl->GetProperty, RESPONSE_CODE=rc, RESPONSE_HEADER=rh, $
+;                       RESPONSE_FILENAME=rf
+;    PRINT, '% Response Code = ' + rc
+;    PRINT, '% Response Header = ' + rh
+;    PRINT, '% Response Filename = ' + rf
+;    PRINT, ' '
+;    PRINT, '% Request stoped'
+;	;
+;    OBJ_DESTROY, ourl
+;    success=0
+;    fn     = ''
+;    RETURN
+;ENDIF
  
 
 ;
@@ -48,6 +48,8 @@ PRINT, date
 ;-------------------------------------------------+
 ourl = OBJ_NEW('IDLnetURL')
 ;user = 'IDL' + !VERSION.RELEASE
+IF FLOAT(!VERSION.RELEASE) LE 8.4 THEN $
+    ourl->SETPROPERTY, SSL_VERIFY_PEER=0
 ;
 IF KEYWORD_SET(ssj) THEN BEGIN
 	remote_file = self->fileurl(/ssj)
@@ -58,7 +60,6 @@ IF KEYWORD_SET(ssm) THEN BEGIN
 	local_file  = self->filename(/ssm)
 ENDIF
 ;
-
 dum = ourl->Get(URL=remote_file, FILENAME=local_file)
 ;
 success = 1
