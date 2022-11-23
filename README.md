@@ -25,7 +25,7 @@ SPEDAS(https://spedas.org/blog/ )は、時系列データ解析・可視化の�
 多くの研究者が利用している。
 
 現在の最新版(version 5.0)をインストールする。　</br>
-先ほどと同じディレクトリで、以下のコマンドを実行する。
+`~/.idl`において以下のコマンドを実行する。
 ```
 wget http://spedas.org/downloads/spedas_5_0.zip
 unzip spedas_5_0.zip
@@ -40,7 +40,7 @@ unzip spedas_5_0.zip
 Cluster衛星のデータベースはEuropean Space Agency(ESA)によって管理されており、利用にはユーザ登録が必要。
 [https://www.cosmos.esa.int/web/csa/register-now](https://www.cosmos.esa.int/web/csa/register-now)から登録する。 </br>
 メールで送られてくるユーザ名と自分で設定したパスワードを控えておく。
-`DD6_2022`以下にある`csa_info.csv`というファイルにユーザ名とパスワードをcsv形式で書き込む。
+`~/.idl`以下にある`csa_info.csv`というファイルにユーザ名とパスワードをcsv形式で書き込む。
 ```
 username, password
 ```
