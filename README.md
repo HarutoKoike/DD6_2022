@@ -9,7 +9,7 @@ cd ~/.idl
 git clone https://github.com/HarutoKoike/DD6_2022
 ```
 ~はホームディレクトリの意味。<br>
-諸々のセットアップも行うため、DD6_2022のディレクトリの中にある`dd6_setup.sh`を実行する。
+`DD6_2022`というディレクトリの中にある`dd6_setup.sh`を実行する。
 ```
 cd DD6_2022
 ./dd6_setup.sh
@@ -24,11 +24,11 @@ SPEDAS(https://spedas.org/blog/ )は、時系列データ解析・可視化の�
 周波数解析などの時系列データの解析手法が簡単に実装できるようになっており、
 多くの研究者が利用している。
 
-現在の最新版(version 5.0)をインストールする。　</br>
+今回の演習で用いるIDL8.0に対応しているversion 3.0をインストールする。　</br>
 `~/.idl`において以下のコマンドを実行する。
 ```
-wget http://spedas.org/downloads/spedas_5_0.zip
-unzip spedas_5_0.zip
+wget http://spedas.org/downloads/spedas_3_00.zip
+unzip spedas_3_00.zip
 ``` 
 
 
