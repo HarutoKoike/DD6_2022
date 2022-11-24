@@ -10,3 +10,5 @@ echo DEVICE, DECOMPOSED=0 \\nLOADCT, 39 \\n!P.BACKGROUND=255 \\n!P.COLOR=0 > ~/.
 
 sudo mv /usr/local/itt/idl/idl80/bin/bin.linux.x86_64/libcurl.so /usr/local/itt/idl/idl80/bin/bin.linux.x86_64/libcurl_old.so
 sudo cp libcurl.so /usr/local/itt/idl/idl80/bin/bin.linux.x86_64
+
+source ~/.bashrc
