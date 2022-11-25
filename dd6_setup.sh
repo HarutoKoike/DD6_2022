@@ -2,7 +2,7 @@
 
 selfdir=$(cd $(dirname $0); pwd)
 
-if [! -d ~/data]; then
+if [　! -d ~/data　]; then
     mkdir ~/data
 fi
 
