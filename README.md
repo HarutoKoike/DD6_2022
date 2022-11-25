@@ -8,7 +8,6 @@
 cd ~/.idl
 git clone https://github.com/HarutoKoike/DD6_2022
 ```
-~はホームディレクトリの意味。<br>
 `DD6_2022`というディレクトリの中にある`dd6_setup.sh`を実行する。
 ```
 cd DD6_2022
