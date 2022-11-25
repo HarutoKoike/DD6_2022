@@ -45,7 +45,7 @@ unzip spedas_3_00.zip
 Cluster衛星のデータベースはEuropean Space Agency(ESA)によって管理されており、利用にはユーザ登録が必要。
 [https://www.cosmos.esa.int/web/csa/register-now](https://www.cosmos.esa.int/web/csa/register-now)から登録する。 </br>
 メールで送られてくるユーザ名と自分で設定したパスワードを控えておく。
-`~/.idl`以下に`csa_info.csv`というファイルを作り、ユーザ名とパスワードをcsv形式で書き込む。
+データのダウンロードの際にプログラムから登録情報を読み込むため、`~/.idl`以下に`csa_info.csv`というファイルを作り、ユーザ名とパスワードをcsv形式で書き込む。
 ```
 username, password
 ```
