@@ -14,6 +14,10 @@ git clone https://github.com/HarutoKoike/DD6_2022
 cd DD6_2022
 ./dd6_setup.sh
 ```
+最後にbashの設定を更新する。
+```
+source ~/.bashrc
+```
 
 </br>
 </br>
