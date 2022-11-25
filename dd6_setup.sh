@@ -12,3 +12,8 @@ sudo mv /usr/local/itt/idl/idl80/bin/bin.linux.x86_64/libcurl.so /usr/local/itt/
 sudo cp libcurl.so /usr/local/itt/idl/idl80/bin/bin.linux.x86_64/libcurl.so.3
 
 source ~/.bashrc
+
+
+cd ~/.idl
+git clone https://github.com/HarutoKoike/lib
+cd -
