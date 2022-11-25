@@ -6,10 +6,13 @@ if [　! -d ~/data　]; then
     mkdir ~/data
 fi
 
+
+export IDL_STARTUP=~/.idl/DD6_2022/idl_startup.pro
+export DATA_PATH=~/data
+export IDL_PATH='<IDL_DEFAULT>':+~/.idl
 echo export DATA_PATH=~/data >> ~/.bashrc  
 echo export IDL_STARTUP=~/.idl/DD6_2022/idl_startup.pro >> ~/.bashrc
-echo export IDL_PATH='<IDL_DEFAULT>':+~/.idl   >> ~/.bashrc
-source ~/.bashrc
+echo "export IDL_PATH='<IDL_DEFAULT>':+~/.idl"  >> ~/.bashrc
 
 
 libcurl=/usr/local/itt/idl/idl80/bin/bin.linux.x86_64/libcurl.so
