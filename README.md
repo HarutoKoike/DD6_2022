@@ -3,17 +3,16 @@
 </br>
 
 ## Cluster衛星データ解析用プログラムのダウンロード
-以下のコマンドを実行し、プログラムをダウンロードする。
+ホームディレクトリの`.idl`において以下のコマンドを実行し、プログラムをダウンロードする。
 ```
-cd ~/.idl
 git clone https://github.com/HarutoKoike/DD6_2022
 ```
 `DD6_2022`というディレクトリの中にある`dd6_setup.sh`を実行する。
 ```
 cd DD6_2022
-./dd6_setup.sh
+sudo ./dd6_setup.sh
 ```
-最後にbashの設定を更新する。
+bashの設定を更新する。
 ```
 source ~/.bashrc
 ```
@@ -23,7 +22,7 @@ source ~/.bashrc
 
 
 ## SPEDASのインストール
-SPEDAS(https://spedas.org/blog/ )は、時系列データ解析・可視化のためのライブラリである。</br>
+SPEDAS([https://spedas.org/blog/](https://spedas.org/blog/))は、時系列データ解析・可視化のためのライブラリである。</br>
 周波数解析などの時系列データの解析手法が簡単に実装できるようになっており、
 多くの研究者が利用している。
 
