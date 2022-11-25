@@ -8,7 +8,7 @@ fi
 
 echo export DATA_PATH=~/data >> ~/.bashrc  
 echo export IDL_STARTUP=~/.idl/DD6_2022/idl_startup.pro >> ~/.bashrc
-echo export IDL_PATH='<IDL_DEFAULT>:+~/.idl'   >> ~/.bashrc
+echo export IDL_PATH='<IDL_DEFAULT>':+~/.idl   >> ~/.bashrc
 source ~/.bashrc
 
 
