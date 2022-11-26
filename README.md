@@ -66,7 +66,7 @@ username, password
 <br />
 
 # 参考になるリンク
-* IDLの全プロシージャのドキュメント(ライセンスを管理しているL3HARRIS社のページ) [https://www.l3harrisgeospatial.com/docs/routines-76.html](https://www.l3harrisgeospatial.com/docs/routines-76.html)
+* IDLの全プロシージャのドキュメント(IDLのライセンスを管理しているL3HARRIS社のページ) [https://www.l3harrisgeospatial.com/docs/routines-76.html](https://www.l3harrisgeospatial.com/docs/routines-76.html)
 * SPEDAS講習会の資料  [http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf](http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf)
 * SPEDASの日本コミュニティのページ [https://github.com/spedas-j/member_contrib/wiki/spedas_useful_command](https://github.com/spedas-j/member_contrib/wiki/spedas_useful_command)
 * SPEDASの全プロシージャのドキュメント [http://themis.ssl.berkeley.edu/socware/spedas_5_0/idl/_spd_doc.html](http://themis.ssl.berkeley.edu/socware/spedas_5_0/idl/_spd_doc.html)  
