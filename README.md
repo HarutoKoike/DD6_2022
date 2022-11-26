@@ -7,7 +7,10 @@
 ```
 git clone https://github.com/HarutoKoike/DD6_2022
 ```
-
+gitが入っていない場合は、以下のコマンドでインストールする。
+```
+sudo apt-get install git
+```
 
 ## その他の設定
 `.idl/DD6_2022`の中にある`dd6_setup.sh`をroot権限で実行する。
