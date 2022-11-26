@@ -9,7 +9,7 @@ git clone https://github.com/HarutoKoike/DD6_2022
 ```
 
 
-# その他の設定
+## その他の設定
 `.idl/DD6_2022`の中にある`dd6_setup.sh`をroot権限で実行する。
 ```
 cd DD6_2022
@@ -64,7 +64,8 @@ username, password
 <br />
 <br />
 
-# 参照リンク
+# 参考になるリンク
+* IDLの全プロシージャのドキュメント(ライセンスを管理しているL3HARRIS社のページ) [https://www.l3harrisgeospatial.com/docs/routines-76.html](https://www.l3harrisgeospatial.com/docs/routines-76.html)
 * SPEDAS講習会の資料  [http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf](http://www.iugonet.org/data/workshop/20190912/mti_20190912_analysis_session_text.pdf)
 * SPEDASの日本コミュニティのページ [https://github.com/spedas-j/member_contrib/wiki/spedas_useful_command](https://github.com/spedas-j/member_contrib/wiki/spedas_useful_command)
 * SPEDASの全プロシージャのドキュメント [http://themis.ssl.berkeley.edu/socware/spedas_5_0/idl/_spd_doc.html](http://themis.ssl.berkeley.edu/socware/spedas_5_0/idl/_spd_doc.html)  
