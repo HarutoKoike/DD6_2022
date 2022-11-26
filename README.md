@@ -11,6 +11,7 @@ git clone https://github.com/HarutoKoike/DD6_2022
 
 ## その他の設定
 `.idl/DD6_2022`の中にある`dd6_setup.sh`をroot権限で実行する。
+パスワードを聞かれるので、PCを起動した時に入力するパスワードを入力する。
 ```
 cd DD6_2022
 sudo ./dd6_setup.sh
