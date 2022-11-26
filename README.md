@@ -3,14 +3,14 @@
 </br>
 
 ## Cluster衛星データ解析用プログラムのダウンロード
-ホームディレクトリの`.idl`において以下のコマンドを実行し、プログラムをダウンロードする。
+ホームディレクトリ以下の`.idl`において以下のコマンドを実行し、プログラムをダウンロードする。
 ```
 git clone https://github.com/HarutoKoike/DD6_2022
 ```
 
 
 # その他の設定
-`DD6_2022`というディレクトリの中にある`dd6_setup.sh`を実行する。
+`.idl/DD6_2022`の中にある`dd6_setup.sh`をroot権限で実行する。
 ```
 cd DD6_2022
 sudo ./dd6_setup.sh
@@ -26,8 +26,7 @@ source ~/.bashrc
 
 ## SPEDASのインストール
 SPEDAS([https://spedas.org/blog/](https://spedas.org/blog/))は、時系列データ解析・可視化のためのライブラリである。</br>
-周波数解析などの時系列データの解析手法が簡単に実装できるようになっており、
-多くの研究者が利用している。
+周波数解析などの時系列データの解析手法が簡単に実装できるようになっており、多くの研究者が利用している。
 
 今回の演習で用いるIDL8.0に対応しているversion 3.0をインストールする。　</br>
 `~/.idl`において以下のコマンドを実行する。
@@ -41,11 +40,11 @@ unzip spedas_3_00.zip
 </br>
 </br>
 
-## Cluster衛星のデータベースへのアクセス権限
-Cluster衛星のデータベースはEuropean Space Agency(ESA)によって管理されており、利用にはユーザ登録が必要。
+## Cluster衛星のデータベースへのアクセス権限の設定
+Cluster衛星のデータベースはEuropean Space Agency(ESA)によって管理されており、利用にはユーザー登録が必要。
 [https://www.cosmos.esa.int/web/csa/register-now](https://www.cosmos.esa.int/web/csa/register-now)から登録する。 </br>
-メールで送られてくるユーザ名と自分で設定したパスワードを控えておく。
-データのダウンロードの際にプログラムから登録情報を読み込むため、`~/.idl`以下に`csa_info.csv`というファイルを作りユーザ名とパスワードをcsv形式で書き込む。
+メールで送られてくるユーザー名と自分で設定したパスワードを控えておく。
+データのダウンロードの際にプログラムから登録情報を読み込むため、`~/.idl`以下に`csa_info.csv`というファイルを作りユーザー名とパスワードをcsv形式で書き込む。
 ```
 username, password
 ```
